@@ -1,0 +1,28 @@
+@keyframes birdFlap {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+}
+
+@keyframes pipeSlide {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100px); }
+}
+
+.flappy-bird {
+    animation: birdFlap 0.3s infinite;
+}
+
+.pipe {
+    animation: pipeSlide 3s linear infinite;
+}
+
+#game-container {
+    touch-action: manipulation;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    #game-container {
+        height: 80vh;
+    }
+}
