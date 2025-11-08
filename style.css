@@ -20,6 +20,21 @@
     touch-action: manipulation;
 }
 
+/* Background image for the game window.
+   Place your image at `assets/background.jpg` (relative to project root)
+   or change the URL below to any image you prefer.
+*/
+#game-container {
+    /* Example: local file */
+    background-image: url('snowy-mountainous-nature-landscape.jpg');
+       
+    background-size: cover;        /* cover the area */
+    background-position: center;   /* center the image */
+    background-repeat: no-repeat;
+    /* Ensure CSS id-selector overrides Tailwind's bg-white class */
+    background-color: transparent;
+}
+
 /* Responsive adjustments */
 @media (max-width: 640px) {
     #game-container {
